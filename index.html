@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<title>Andrew Lee&rsquo;s Resume</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<meta name="description" content=" ... add description here ... " />
+	<meta name="keywords" content=" ... add keywords here ... " />
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	
+	<!-- //////// Favicon ////////  -->
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"  />
+	
+	<!-- //////// Css StyleSheets ////////  -->
+	<link href="_layout/style.css"       rel="stylesheet" type="text/css" media="all"   />
+	<link href="_layout/style-print.css" rel="stylesheet" type="text/css" media="print" />
+
+	<!-- //////// jQuery ////////  -->
+	<script src="_layout/js/jquery-1.4.2.min.js" type="text/javascript"></script>
+	
+	<!-- //////// DD_belatedPNG - Png Fix for IE ////////  -->
+	<!--[if IE 6 ]>
+		<script type="text/javascript" src="_layout/js/DD_belatedPNG_0.0.7a-min.js"></script>
+		<script type="text/javascript">
+			DD_belatedPNG.fix('#header,#content,#footer');
+		</script>
+	<![endif]-->
+	
+	<!-- //////// Cufon Font Replacement ////////  -->
+	<script type="text/javascript" src="_layout/js/cufon/cufon-yui.js"></script>
+	<script type="text/javascript" src="_layout/js/cufon/hattori_hanzo.font.js"></script>
+
+	<!-- //////// Tipsy - custom Tooltips ////////  -->
+	<link rel="stylesheet" type="text/css" href="_layout/js/tipsy/css.tipsy.css" />
+	<script type="text/javascript" src="_layout/js/tipsy/jquery.tipsy.js"></script>
+
+	<!-- //////// PrettyPhoto ////////  -->
+	<link rel="stylesheet" type="text/css" href="_layout/js/prettyphoto/css.prettyPhoto.css" />
+	<script type="text/javascript" src="_layout/js/prettyphoto/jquery.prettyPhoto.js"></script>
+	
+	<!-- //////// Customs JS  ////////  -->	
+	<script type="text/javascript">
+	/* <![CDATA[ */	                                         
+		$(document).ready(function(){
+		
+			// font replacement
+			if ( ! ( $.browser.msie & ($.browser.version == 6) ) )
+			{ 	
+				$("h1#name").css({'font-size':'46px', 'padding-top':'20px' , 'margin-bottom':'0px' });
+				Cufon.replace('#portfolio h2, h2.cv-section-name, h1#name'); // using cufon with IE6 breaks the layout in some cases
+				
+			}	
+			
+			// tooltips
+			$('.tip').tipsy({gravity: 'e'});	//  apply class .tip to any <a> tag to make it's  title be displayed like a tooltip
+			
+			// lightbox
+			$("a[rel^='prettyPhoto']").prettyPhoto({
+				theme: 'light_square',
+				hideflash: false, 		// Hides all the flash object on a page, set to TRUE if flash appears over prettyPhoto
+				wmode: 'opaque', 		// Set the flash wmode attribute
+				autoplay: true, 		// Automatically start videos: True/False
+				modal: false 			// If set to true, only the close button will close the window
+			});
+		
+		});	
+	/* ]]> */		
+	</script> 
+	
+</head>
+<body>
+	
+	<noscript>
+		<link href="_layout/nojs.css" rel="stylesheet" type="text/css" media="all" />
+		<div id="nojs">JavaScript seems to be Disabled! This website works best with JavaScript enabled.</div>
+	</noscript>
+	
+	<div id="wrap">
+	
+		<div id="header">
+			
+			<div id="block-top"></div>
+			
+			<div id="personal-info" class="fixed">
+			
+				<a id="picture-of-you" href="_content/profile.jpg" title="Andrew Lee" rel="prettyPhoto">
+					<img src="_content/profile.jpg" width="100" height="100" alt="" />
+				</a>
+				
+				<h1 id="name">Andrew Lee</h1>
+				<h2 id="what-you-do"></h2>
+				
+			</div><!-- end #personal-info -->
+					
+			<ul id="nav" class="fixed">
+				<li><a href="index.html" class="active">Resume</a></li>
+				<li>/</li>
+				<!--<li><a href="portfolio.html">Portfolio</a></li>
+				<li>/</li>-->
+				<li><a href="contact.html">Contact</a></li>
+			</ul><!-- end #nav -->
+
+			<div class="divider"></div>
+			
+		</div><!-- end #header -->
+		
+		<div id="content" class="fixed">
+		<!-- ////////////////////////////////////////////////////////////////////////////////////// -->
+
+			<div id="cv-2">
+			
+				<!-- // PERSONAL DETAILS     ////////////////////////////////////////////////////// -->
+				<div class="cv-section col-1 fixed">
+				
+					<h2 class="cv-section-name">Personal Details</h2>
+
+					
+					<ul class="cv-section-items">
+						
+						<li class="cv-item">
+							<span class="topic">Name:</span>         
+							Andrew Lee
+						</li>
+						<li class="cv-item">
+							<span class="topic">Expected Graduation:</span>
+							May 2014
+						</li>
+
+						<li class="cv-item">
+							<span class="topic">Major / GPA:</span>
+							BSc Electrical Engineering &ndash; 3.63
+						</li>
+						<li class="cv-item">
+							<span class="topic">Email:</span>
+							<a href="mailto:alee13@illinois.edu">alee13@illinois.edu</a>
+						</li>
+							
+					</ul><!-- end .cv-section-items -->
+
+				</div><!-- end .cv-section -->
+				
+				<!-- // WORK EXPERIENCE      ////////////////////////////////////////////////////// -->
+				<div class="cv-section col-1 fixed">
+				
+					<h2 class="cv-section-name">Work Experience</h2>
+
+					
+					<ul class="cv-section-items">
+					
+						<li class="cv-item">
+							<h4>June 2012 - present</h4>
+							<h2>Software Engineering Intern</h2>
+							<h3>Jump Trading LLC, Full-Time</h3>
+							<p>10 week project building a trading interface for the BATS exchange. Created API for handling orders, reporting P&amp;L, and rudimentary risk management controls.</p>
+
+							<ul>
+								<li>C++ development.</li>
+								<li>Networking and real-time execution of trades.</li>
+							</ul> 
+						</li>
+						<li class="cv-item">
+							<h4>January 2011 - June 2012</h4>
+							<h2>Software Developer Intern</h2>
+							<h3>NCSA Innovative Systems Lab, Part-Time</h3>
+							<p>Developed Windows port of NCSA’s CUDA GPU Memtest utility. Designed and developed GUI (graphical user interface) for the utility. Modified CUDA kernel functions to enable async operation and progress feedback.</p>
+							<ul>
+								<li>C++, Qt, and CUDA development.</li>
+							</ul>
+						</li>
+						<li class="cv-item">
+							<h4>January 2011 - May 2011</h4>
+							<h2>R&amp;D Intern</h2>
+							<h3>EPTCO, Part-Time</h3>
+							<p>Developed a prototype for a new line of networked IP cameras. Engineered the platform from the web interface and framework all the way down to the embedded Linux configuration.</p>
+							<ul>
+								<li>C++, embedded systems development.</li>
+								<li>Python web interface development.</li>
+							</ul>
+						</li>
+						<li class="cv-item">
+							<h4>September 2008 - August 2010</h4>
+							<h2>Summer Research Intern</h2>
+							<h3>Fermilab, Full-Time and Part-Time</h3>
+							<p>Worked with Dr. Aseet Mukherjee on the mu2e detector. Helped develop system for automatic calibration of wire tension, a component required for construction of mu2e detector. Helped develop thermometry systems for detecting thermal faults in cryogenic particle accelerator cavities. Used AVR microcontroller and custom circuitry as multiplexer; ADC for data collection. Wrote software using OpenGL to display 3D representation of cavity surface temperatures.</p>
+							<ul>
+								<li>C++, embedded systems development.</li>
+								<li>OpenGL development for 3-D visualization.</li>
+								<li>Mixed signal circuit design.</li>
+							</ul>
+						</li>
+						
+					</ul><!-- end .cv-section-items -->
+				
+				</div><!-- end .cv-section -->
+				
+				<!-- // TECHNICAL SKILLS     ////////////////////////////////////////////////////// -->
+				<div class="cv-section col-1 fixed" id="technical-skills">
+
+				
+					<h2 class="cv-section-name"> Technical Skills</h2>
+					
+					<ul class="cv-section-items">
+						
+						<li class="cv-item"> 
+							<span class="topic">Programming</span> <br/>
+							C++, Python, Javascript, HTML/CSS. Exposure to Haskell, Lisp, F#, Java, PHP, x86 assembly. Experience with OpenGL and CUDA.
+						</li>
+						<li class="cv-item"> 
+							<span class="topic">Information Technology</span> <br/>
+							Windows, Linux, OS X administration. MySQL database administration.
+						</li>
+						<li class="cv-item"> 
+							<span class="topic">Embedded Design</span> <br/>
+							VHDL on Xilinx FPGA, TI MSP-series and AVR microcontrollers. Eagle CAD for PCB routing. PSPICE simulation.
+						</li>
+
+						
+					</ul><!-- end .cv-section-items -->
+	
+				</div><!-- end .cv-section -->
+								
+				<!-- // EDUCATION            ////////////////////////////////////////////////////// -->
+				<div class="cv-section last col-1 fixed">
+				
+					<h2 class="cv-section-name">Education</h2>
+					
+					<ul class="cv-section-items">
+					
+						<li class="cv-item">
+
+							<h4>2010 - present</h4>
+							<h2>University of Illinois Urbana-Champaign</h2>
+							<br />
+							<p><ul><li>BSc Electrical Engineering</li></ul></p>
+						</li>
+						<li class="cv-item">
+							<h4>2007 - 2010</h4>
+
+							<h2>Illinois Math &amp; Science Academy</h2>
+							<br />
+							<p></p>
+						</li>
+						
+					</ul><!-- end .cv-section-items -->
+				
+				</div><!-- end .cv-section -->
+
+			</div><!-- end #cv-2 -->	
+			
+		<!-- ////////////////////////////////////////////////////////////////////////////////////// -->	
+		</div><!-- end #content -->
+		
+		<div id="footer" class="fixed">
+			
+			<div class="divider2"></div>
+			
+			<p id="copyright">&copy; 2012 Andrew Lee. All rights reserved.</p>
+			<a href="#" id="top">&#710; Top</a>
+			
+		</div><!-- end #footer -->
+		
+		<a href="javascript:window.print()" id="print" title="Print Resume" class="tip">Print Resume</a>
+		<a href="#" id="download" title="Download Resume" class="tip">Download Resume</a>
+	
+	</div><!-- end #wrap -->
+	
+	<script type="text/javascript"> Cufon.now(); </script>
+
+	<!-- analytics code here -->
+
+</body>
+</html>
